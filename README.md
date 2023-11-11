@@ -1,22 +1,21 @@
 # このプロジェクトの目的
 Reactの勉強
 その他技術の勉強
-	
-	
 
 # GlobalWebApplicationServer
 使用言語　C# ASP.NET React 
 
 使用しているDB　
-  PostgreSql
-  設定用bash GlobalWebApplicationServer/Data/DBInstall.sh
-
+PostgreSql
+設定用bash GlobalWebApplicationServer/Data/DBInstall.sh
 
 # ファイル構成
 ## C#設定ファイル
+
 ### DB設定関連
 1. Program.cs
 1. appsettings.json
+
 ### クライアントサイドのURLルーティング関連
 1. setupProxy.js
 1. AppRoute.js

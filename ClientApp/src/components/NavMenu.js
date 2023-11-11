@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+
 import { Collapse, Navbar, NavbarBrand, NavbarToggler, NavItem, NavLink } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import { LoginMenu } from './api-authorization/LoginMenu';
@@ -6,7 +7,13 @@ import './NavMenu.css';
 
 export class NavMenu extends Component {
   static displayName = NavMenu.name;
-
+    componentDidMount() {
+        fetch('/api/resource')
+            .then(response => response.text())
+            .then(value => {
+                console.log(value);
+            });
+    }
   constructor (props) {
     super(props);
 
@@ -22,7 +29,7 @@ export class NavMenu extends Component {
     });
   }
 
-  render() {
+    render() {
     return (
       <header>
         <Navbar className="navbar-expand-sm navbar-toggleable-sm ng-white border-bottom box-shadow mb-3" container light>

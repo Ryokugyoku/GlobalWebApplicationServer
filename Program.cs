@@ -16,6 +16,7 @@ namespace GlobalWebApplicationServer
 
             // Add services to the container.
             var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
+            //DBの設定、options.UseNpgsqlでPostgreSqlの接続用ライブラリを呼び出している
             builder.Services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseNpgsql(connectionString));
             builder.Services.AddDatabaseDeveloperPageExceptionFilter();

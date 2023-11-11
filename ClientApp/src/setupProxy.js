@@ -11,7 +11,8 @@ const context = [
   "/Identity",
   "/connect",
   "/ApplyDatabaseMigrations",
-  "/_framework"
+    "/_framework",
+   "/api/resource" // ここに新しいAPIのエンドポイントを追加
 ];
 
 const onError = (err, req, resp, target) => {

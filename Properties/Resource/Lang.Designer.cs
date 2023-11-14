@@ -88,6 +88,15 @@ namespace GlobalWebApplicationServer.Properties.Resource {
         }
         
         /// <summary>
+        ///   Home に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string navi_home {
+            get {
+                return ResourceManager.GetString("navi.home", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Register に類似しているローカライズされた文字列を検索します。
         /// </summary>
         public static string Register {

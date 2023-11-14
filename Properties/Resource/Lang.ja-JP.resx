@@ -126,6 +126,9 @@
   <data name="Logout" xml:space="preserve">
     <value>ログアウト</value>
   </data>
+  <data name="navi.home" xml:space="preserve">
+    <value>ホーム</value>
+  </data>
   <data name="Register" xml:space="preserve">
     <value>登録</value>
   </data>
